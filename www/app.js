@@ -1,3 +1,4 @@
+/*
 // 1) Ecrire dans la console tous les chiffres de 1 à 10
 for (let count = 1; count <= 10; count++) {
   console.log(count);
@@ -49,3 +50,49 @@ function fibonacci(toto = 0) {
 }
 
 console.log(fibonacci(50));
+
+
+//exercice 5
+
+const number = 451;
+
+let guessedNumber = prompt("Entrez un nombre");
+
+console.log(guessedNumber);
+
+while (true){
+  if (guessedNumber < number){
+      guessedNumber = prompt("C'est plus!");
+  }
+  if (guessedNumber > number) {
+      guessedNumber = prompt("C'est moins");
+  }
+  if (guessedNumber == number) {
+     alert("Bravo");
+     break; 
+    }
+   else{
+     guessedNumber = prompt("Veuillez rentrer un nombre.");
+   } 
+    console.log(guessedNumber);
+}
+
+
+*/
+
+// Exercice pyramide:
+let starG="*";
+let starD="  "
+
+for(countG=1;countG<10;countG++){
+  for(countD=9;countD<1;countD--)
+        console.log(starD.repeat(countD) + starG.repeat(countG));
+  }
+
+
+
+
+
+
+ 
+
